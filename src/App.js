@@ -4,6 +4,7 @@ import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
 import LandingPage from "./Pages/LandingPage";
 import Home from "./Pages/Home";
+import Course from "./Pages/Course";
 import Protected from "./Components/Protected";
 import Navigator from "./Components/Navbar";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
@@ -22,6 +23,14 @@ function App() {
             element={
               <Protected>
                 <Home />
+              </Protected>
+            }
+          />
+          <Route
+            path="/course"
+            element={
+              <Protected>
+                <Course />
               </Protected>
             }
           />
