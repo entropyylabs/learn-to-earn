@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
 import LandingPage from "./Pages/LandingPage";
-import Dashboard from "./Pages/Dashboard";
+import Home from "./Pages/Home";
 import Protected from "./Components/Protected";
 import Navigator from "./Components/Navbar";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
@@ -18,10 +18,10 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route
-            path="/dashboard"
+            path="/home"
             element={
               <Protected>
-                <Dashboard />
+                <Home />
               </Protected>
             }
           />

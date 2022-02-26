@@ -1,3 +1,5 @@
+@import "~antd/dist/antd.css";
+
 .form-holder {
   display: flex;
   justify-content: center;
@@ -47,60 +49,31 @@
   height: 38px !important;
 }
 
-/* Bitcoin component */
-.bitcoin-price {
-  width: 100%;
-  background: #1a294d;
-  color: #fff;
-  border-radius: 20px;
-  border: 5px solid #f9941b;
-  margin: 50px;
+/* Page */
+.page {
+  margin: 3rem;
 }
 
-.fa-bitcoin {
-  color: #f9941b;
+.page-title {
+  font-size: 26px;
 }
 
-.bitcoin-icon {
-  background: #fff;
-  border-radius: 50%;
-}
-
-.top-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+/* Course card */
+.course-card {
+  background: #e5e5e5;
+  border-radius: 10px;
+  max-width: 600px;
+  height: 250px;
+  margin-bottom: 20px;
   padding: 20px;
+  overflow: hidden;
 }
 
-.bottom-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+.course-card span {
+  display: block;
 }
 
-/* Chart component */
-.chart-holder {
-  width: 100%;
-}
-
-/* Landing page */
-.landing-banner {
-  padding: 20px;
-}
-
-.landing-page {
-  height: 95vh;
-}
-
-.banner-holder {
-  background: #fff;
-  border-radius: 20px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.course-card .course-name {
+  font-weight: bold;
+  padding-top: 10px;
 }

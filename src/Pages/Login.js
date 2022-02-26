@@ -16,7 +16,7 @@ function Login() {
     setError("");
     try {
       await login(email, password);
-      navigate("/dashboard");
+      navigate("/home");
     } catch (err) {
       setError(err.message);
     }
@@ -26,7 +26,7 @@ function Login() {
     e.preventDefault();
     try {
       await googleLogIn();
-      navigate("/dashboard");
+      navigate("/home");
     } catch (err) {
       setError(err.message);
     }

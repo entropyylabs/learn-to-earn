@@ -36,7 +36,7 @@ function Navigator() {
                     Logout
                   </span>
                 ) : (
-                  <Nav.Link href="/dashboard">Dashboard</Nav.Link>
+                  <Nav.Link href="/home">Home</Nav.Link>
                 )
               ) : (
                 <Nav.Link href="/login">Login</Nav.Link>
