@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col, Button } from "antd";
+import { Link } from "react-router-dom";
 
 function CourseCard() {
   return (
@@ -17,7 +18,7 @@ function CourseCard() {
             similique pariatur quaerat minima tempora doloremque.
           </p>
           <Button className="course-btn" type="primary">
-            Start Learning!
+            <Link to="/course">Start Learning!</Link>
           </Button>
         </Col>
         <Col span={8}>
