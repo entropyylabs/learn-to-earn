@@ -77,3 +77,12 @@
   font-weight: bold;
   padding-top: 10px;
 }
+
+/* Create course page */
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+  font-size: 28px;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  font-size: 28px;
+}

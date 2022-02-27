@@ -41,6 +41,7 @@ function Navigator() {
               ) : (
                 <Nav.Link href="/login">Login</Nav.Link>
               )}
+              <Nav.Link href="/create">Create</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
