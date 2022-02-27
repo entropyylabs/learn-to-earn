@@ -6,6 +6,10 @@
   align-content: center;
   align-items: center;
   height: 100vh;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .component-holder {
@@ -49,6 +53,18 @@
   height: 38px !important;
 }
 
+/* Button across website */
+.l2e-btn,
+.l2e-btn:hover {
+  width: 208px;
+  height: 62px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid white;
+  color: #000;
+  font-size: 16px;
+}
+
 /* Page */
 .page {
   margin: 3rem;
@@ -58,9 +74,8 @@
   font-size: 26px;
 }
 
-/* Course card */
+/* Course card and page */
 .course-card {
-  background: #e5e5e5;
   border-radius: 10px;
   max-width: 600px;
   height: 250px;
@@ -71,11 +86,24 @@
 
 .course-card span {
   display: block;
+  color: rgba(0, 0, 0, 0.34);
 }
 
 .course-card .course-name {
   font-weight: bold;
   padding-top: 10px;
+}
+
+.home-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.home-heading .l2e-btn {
+  border: 1px solid black;
 }
 
 /* Create course page */
