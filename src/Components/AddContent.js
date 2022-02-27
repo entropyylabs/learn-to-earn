@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 
-function AddCourse() {
+function AddContent() {
   const [value, setValue] = useState("");
   const editorRef = useRef(null);
   const modules = {
@@ -30,7 +30,6 @@ function AddCourse() {
   };
   return (
     <div>
-      <h1>Add course</h1>
       <ReactQuill
         ref={editorRef}
         theme="snow"
@@ -38,9 +37,8 @@ function AddCourse() {
         onChange={setValue}
         modules={modules}
       />
-      <button onClick={printVal}>check</button>
     </div>
   );
 }
 
-export default AddCourse;
+export default AddContent;

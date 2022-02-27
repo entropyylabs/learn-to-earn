@@ -5,7 +5,6 @@ import Login from "./Pages/Login";
 import LandingPage from "./Pages/LandingPage";
 import Home from "./Pages/Home";
 import Course from "./Pages/Course";
-import AddCourse from "./Pages/AddCourse";
 import CreateCourse from "./Pages/CreateCourse";
 import Protected from "./Components/Protected";
 import Navigator from "./Components/Navbar";
@@ -33,14 +32,6 @@ function App() {
             element={
               <Protected>
                 <Course />
-              </Protected>
-            }
-          />
-          <Route
-            path="/addcourse"
-            element={
-              <Protected>
-                <AddCourse />
               </Protected>
             }
           />
