@@ -1,5 +1,8 @@
 import React from "react";
 import { Collapse } from "antd";
+import AddCourse from "../Components/AddCourse";
+import AddModules from "../Components/AddModules";
+import AddReward from "../Components/AddReward";
 const { Panel } = Collapse;
 
 function CreateCourse() {
@@ -8,13 +11,13 @@ function CreateCourse() {
       <h1 className="page-title">Create Course</h1>
       <Collapse accordion>
         <Panel header="Course Details" key="1">
-          <p>Add course info</p>
+          <AddCourse />
         </Panel>
         <Panel header="Course Content" key="2">
-          <p>Add Modules</p>
+          <AddModules />
         </Panel>
         <Panel header="Course Rewards" key="3">
-          <p>Add NFT</p>
+          <AddReward />
         </Panel>
       </Collapse>
     </div>
