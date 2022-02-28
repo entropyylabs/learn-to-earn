@@ -38,6 +38,11 @@ h6 {
   padding-left: 20px !important;
 }
 
+.navbar-style {
+  background-color: rgba(24, 178, 244, 0.1) !important;
+  color: #18b2f4;
+}
+
 .logo {
   color: #4d4d4d;
 }
@@ -152,17 +157,23 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 
 .certificate-div {
   position: relative;
 }
 
+.certificate-img {
+  width: 700px;
+}
+
 .certificate-name {
   position: absolute;
-  top: 410px;
-  left: 118px;
-  font-size: 36px;
+  top: 230px;
+  left: 68px;
+  font-size: 28px;
+  width: 100%;
   font-weight: bold;
 }
 
@@ -188,4 +199,71 @@ h6 {
   border-radius: 10px;
   font-size: 20px;
   width: 300px;
+}
+
+/* Landing page */
+.landing-page {
+  height: 95vh;
+  background: #18b2f4;
+}
+
+.landing-banner {
+  display: flex;
+  flex-direction: row;
+  height: 60%;
+}
+
+.banner-left,
+.banner-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-msg p {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 64px;
+  color: #fff;
+}
+
+.get-started-btn {
+  margin-top: 40px;
+}
+
+.navbar {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px !important;
+  color: #18b2f4 !important;
+  font-weight: 600;
+}
+
+/* Course page styles */
+.ant-layout-sider-children {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.ant-layout-header {
+  padding: 10px 30px;
+}
+
+.ant-layout-content {
+  padding: 20px 30px;
+}
+
+.module-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
+import logo from "../assets/logo.png";
 
 function Navigator() {
   const { user, logout } = useUserAuth();
@@ -21,10 +22,18 @@ function Navigator() {
   if (!ignorePaths.includes(location.pathname)) {
     return (
       <div>
-        <Navbar bg="light" variant="light" expand="lg" sticky="top">
+        <Navbar
+          className="navbar-style"
+          bg="light"
+          variant="light"
+          expand="lg"
+          sticky="top"
+        >
           <Navbar.Brand href="#home">
-            <Nav.Link href="/">
-              <span className="logo"> L2E</span>
+            <Nav.Link href="/home">
+              <span className="logo">
+                <img src={logo} alt="" srcset="" />
+              </span>
             </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -36,12 +45,11 @@ function Navigator() {
                     Logout
                   </span>
                 ) : (
-                  <Nav.Link href="/home">Home</Nav.Link>
+                  <Nav.Link href="/home">Explore</Nav.Link>
                 )
               ) : (
                 <Nav.Link href="/login">Login</Nav.Link>
               )}
-              <Nav.Link href="/create">Create</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
