@@ -241,3 +241,23 @@ h6 {
   color: #18b2f4 !important;
   font-weight: 600;
 }
+
+/* Course page styles */
+.ant-layout-sider-children {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.ant-layout-header {
+  padding: 10px 30px;
+}
+
+.ant-layout-content {
+  padding: 20px 30px;
+}
+
+.module-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
