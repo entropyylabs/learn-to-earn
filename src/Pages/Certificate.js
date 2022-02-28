@@ -9,6 +9,15 @@ function Certificate() {
   return (
     <div>
       <div className="certificate-holder">
+        <div ref={captureRef} className="certificate-div">
+          <img
+            src={CertificateImage}
+            className="certificate-img"
+            alt="certificate"
+            srcset=""
+          />
+          <div className="certificate-name">{name}</div>
+        </div>
         <div className="claim-row">
           <input
             type="text"
@@ -20,10 +29,6 @@ function Certificate() {
           <button className="claim-btn" onClick={generateImage}>
             Claim your reward
           </button>
-        </div>
-        <div ref={captureRef} className="certificate-div">
-          <img src={CertificateImage} alt="" srcset="" />
-          <div className="certificate-name">{name}</div>
         </div>
       </div>
     </div>

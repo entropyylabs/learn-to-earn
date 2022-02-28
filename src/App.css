@@ -157,17 +157,23 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 
 .certificate-div {
   position: relative;
 }
 
+.certificate-img {
+  width: 700px;
+}
+
 .certificate-name {
   position: absolute;
-  top: 410px;
-  left: 118px;
-  font-size: 36px;
+  top: 230px;
+  left: 68px;
+  font-size: 28px;
+  width: 100%;
   font-weight: bold;
 }
 
