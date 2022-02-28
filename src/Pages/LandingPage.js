@@ -1,17 +1,27 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Button } from "antd";
+import { Link } from "react-router-dom";
+import banner from "../assets/banner.png";
+
 function LandingPage() {
   return (
     <div className="landing-page">
-      <Container>
-        <Row className="justify-content-center">
-          <Col lg={6} md={8}>
-            <div className="banner-holder">
-              <h1 className="landing-banner">Learn to earn!</h1>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+      <div className="landing-banner">
+        <div className="banner-left">
+          <div className="banner-msg">
+            <p>Learn</p> <p>to</p>{" "}
+            <p>
+              earn <strong>rewards</strong>
+            </p>
+            <Button className="get-started-btn l2e-btn" type="primary">
+              <Link to="/home">Get started</Link>
+            </Button>
+          </div>
+        </div>
+        <div className="banner-right">
+          <img src={banner} alt="" srcset="" />
+        </div>
+      </div>
     </div>
   );
 }
