@@ -6,6 +6,7 @@ import LandingPage from "./Pages/LandingPage";
 import Home from "./Pages/Home";
 import Course from "./Pages/Course";
 import CreateCourse from "./Pages/CreateCourse";
+import Certificate from "./Pages/Certificate";
 import Protected from "./Components/Protected";
 import Navigator from "./Components/Navbar";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
@@ -40,6 +41,14 @@ function App() {
             element={
               <Protected>
                 <CreateCourse />
+              </Protected>
+            }
+          />
+          <Route
+            path="/certificate"
+            element={
+              <Protected>
+                <Certificate />
               </Protected>
             }
           />
