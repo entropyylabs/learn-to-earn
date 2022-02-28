@@ -130,3 +130,47 @@
   > .ant-steps-item-tail::after {
   background-color: green;
 }
+
+/* Certificate page */
+.certificate-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate-div {
+  position: relative;
+}
+
+.certificate-name {
+  position: absolute;
+  top: 410px;
+  left: 118px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.claim-btn {
+  height: 62px;
+  width: 208px;
+  background-color: #18b2f4;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.claim-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 100px;
+  margin: 20px;
+}
+
+.claim-row input {
+  border-radius: 10px;
+  font-size: 20px;
+  width: 300px;
+}
