@@ -1,4 +1,14 @@
 @import "~antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IBM Plex Mono", monospace;
+}
 
 .form-holder {
   display: flex;
@@ -104,6 +114,11 @@
 
 .home-heading .l2e-btn {
   border: 1px solid black;
+}
+
+.course-btn,
+.course-btn:hover {
+  height: 50px;
 }
 
 /* Create course page */
