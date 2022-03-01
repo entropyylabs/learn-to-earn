@@ -87,6 +87,7 @@ h6 {
 
 .page-title {
   font-size: 26px;
+  font-weight: bold;
 }
 
 /* Course card and page */
@@ -210,7 +211,7 @@ h6 {
 .landing-banner {
   display: flex;
   flex-direction: row;
-  height: 60%;
+  height: 80%;
 }
 
 .banner-left,
@@ -266,4 +267,33 @@ h6 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+/* Create page styles */
+.ant-collapse-header,
+.ant-form-item-label {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.ant-input,
+.ant-input-number {
+  border-radius: 10px;
+}
+
+/* Modal */
+.modal-image {
+  height: 200px;
+  width: 200px;
+}
+
+.ql-video {
+  height: 400px;
+  width: 600px;
+}
+
+.ant-modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
