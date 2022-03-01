@@ -1,11 +1,24 @@
-import React from "react";
-import { Form, Input, Button, Space } from "antd";
+import React, { useState } from "react";
+import { Form, Input, Button, Space, Modal } from "antd";
 import { MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
 import AddContent from "../Components/AddContent";
+import success from "../assets/success.png";
 
 function AddModules() {
   const onFinish = (values) => {
     console.log("Received values of form:", values);
+  };
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
   };
   return (
     <div>
@@ -47,11 +60,21 @@ function AddModules() {
           )}
         </Form.List>
         <Form.Item>
-          <Button type="primary" htmlType="submit">
+          <Button type="primary" onClick={showModal}>
             Create Modules
           </Button>
         </Form.Item>
       </Form>
+      <Modal
+        title="Details Submitted"
+        visible={isModalVisible}
+        onOk={handleOk}
+        onCancel={handleCancel}
+      >
+        <img className="modal-image" src={success} alt="" srcset="" />
+        <p>Details submitted successfully!</p>
+        <p> Course will be added subject to approval</p>
+      </Modal>
     </div>
   );
 }

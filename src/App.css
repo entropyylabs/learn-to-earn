@@ -211,7 +211,7 @@ h6 {
 .landing-banner {
   display: flex;
   flex-direction: row;
-  height: 60%;
+  height: 80%;
 }
 
 .banner-left,
@@ -284,4 +284,16 @@ h6 {
 .modal-image {
   height: 200px;
   width: 200px;
+}
+
+.ql-video {
+  height: 400px;
+  width: 600px;
+}
+
+.ant-modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -15,7 +15,7 @@ function Course() {
   return (
     <Layout>
       <Sider theme="light">
-        <h4>Modules</h4>
+        <h4>📚 Modules</h4>
         <Steps direction="vertical" current={step}>
           {modules.map(({ module_name }, index) => {
             return (
@@ -43,7 +43,7 @@ function Course() {
             </Button>
             {step == modules.length - 1 && (
               <Button className="l2e-btn">
-                <Link to="/certificate">Claim reward</Link>
+                <Link to="/certificate">Claim reward 🏆 </Link>
               </Button>
             )}
           </div>

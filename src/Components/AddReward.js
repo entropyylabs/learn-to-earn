@@ -68,10 +68,8 @@ function AddReward() {
         onCancel={handleCancel}
       >
         <img className="modal-image" src={success} alt="" srcset="" />
-        <p>
-          Details submitted successfully! Course will be added subject to
-          approval
-        </p>
+        <p>Details submitted successfully!</p>
+        <p> Course will be added subject to approval</p>
       </Modal>
     </div>
   );

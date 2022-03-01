@@ -1,7 +1,20 @@
-import React from "react";
-import { Form, Input, Button, InputNumber } from "antd";
+import React, { useState } from "react";
+import { Form, Input, Button, InputNumber, Modal } from "antd";
+import success from "../assets/success.png";
 
 function AddCourse() {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
   return (
     <div>
       <Form
@@ -42,11 +55,21 @@ function AddCourse() {
         </Form.Item>
 
         <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-          <Button type="primary" htmlType="submit">
+          <Button type="primary" onClick={showModal}>
             Add course
           </Button>
         </Form.Item>
       </Form>
+      <Modal
+        title="Details Submitted"
+        visible={isModalVisible}
+        onOk={handleOk}
+        onCancel={handleCancel}
+      >
+        <img className="modal-image" src={success} alt="" srcset="" />
+        <p>Details submitted successfully!</p>
+        <p> Course will be added subject to approval</p>
+      </Modal>
     </div>
   );
 }
