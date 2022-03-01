@@ -22,11 +22,21 @@ function Home() {
 
       <Row>
         <Col span={12}>
-          <CourseCard icon={course1} color="#D989FF" />
+          <CourseCard
+            icon={course1}
+            color="#D989FF"
+            name="Introduction to DeFi"
+            description="Explore the world of decentralized finance"
+          />
         </Col>
 
         <Col span={12}>
-          <CourseCard icon={course2} color="#18B2F4" />
+          <CourseCard
+            icon={course2}
+            color="#18B2F4"
+            name="Intermediate DeFi"
+            description="Learn about DEXs and lending markets"
+          />
         </Col>
       </Row>
     </div>
